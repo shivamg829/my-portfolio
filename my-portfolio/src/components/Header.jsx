@@ -97,8 +97,8 @@ const Header = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/SHIVAM.docx";
-                link.download = "SHIVAM.docx";
+                link.href = "/Shivam_Resume.docx";
+                link.download = "Shivam_Resume.docx";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
