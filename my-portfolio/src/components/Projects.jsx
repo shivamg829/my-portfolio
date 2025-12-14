@@ -27,7 +27,7 @@ const Projects = () => {
 const projects = [
   {
     id: 1,
-    title: "DayLiner - Task Management",
+    title: "DayLine - Task Management",
     description:
       "A task management application with user authentication, task creation, and real-time updates.",
     image: imgdayline,
