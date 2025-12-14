@@ -2,6 +2,7 @@ import { Github, ExternalLink, Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import imgairbnb from "../assets/airbnb.png";
 import imgdayline from "../assets/DayLine.png";
+import imgweather from "../assets/weatherly.png";
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,30 +24,41 @@ const Projects = () => {
     return () => element && observer.unobserve(element);
   }, []);
 
-  const projects = [
-    {
-      id: 1,
-      title: "DayLiner - Task Management",
-      description:
-        "A full-stack task management application with user authentication, task creation, and real-time updates.",
-      image: imgdayline,
-      technologies: ["MERN", "Tailwind CSS"],
-      category: "Full Stack",
-      liveLink: "https://dayline-task.netlify.app",
-      githubLink: "https://github.com/shivamg829/DayLine",
-    },
-    {
-      id: 2,
-      title: "Airbnb Clone",
-      description:
-        "A full-stack vacation rental platform featuring booking functionality, property listings, and user authentication.",
-      image: imgairbnb,
-      technologies: ["MongoDB", "Express", "EJS", "Node.js", "Tailwind CSS"],
-      category: "Full Stack",
-      liveLink: "https://airbnb-wt7p.onrender.com",
-      githubLink: "https://github.com/shivamg829/airbnb-clone-backend",
-    },
-  ];
+const projects = [
+  {
+    id: 1,
+    title: "DayLiner - Task Management",
+    description:
+      "A task management application with user authentication, task creation, and real-time updates.",
+    image: imgdayline,
+    technologies: ["MERN", "Tailwind CSS"],
+    category: "Full Stack",
+    liveLink: "https://dayline-task.netlify.app",
+    githubLink: "https://github.com/shivamg829/DayLine",
+  },
+  {
+    id: 2,
+    title: "Airbnb Clone",
+    description:
+      "A rental platform featuring booking functionality, property listings, and user authentication.",
+    image: imgairbnb,
+    technologies: ["MongoDB", "Express", "EJS", "Node.js", "Tailwind CSS"],
+    category: "Full Stack",
+    liveLink: "https://airbnb-wt7p.onrender.com",
+    githubLink: "https://github.com/shivamg829/airbnb-clone-backend",
+  },
+  {
+    id: 3,
+    title: "WeatherWise - Real-time Weather App",
+    description:
+      "A responsive frontend application built with React to fetch and display current weather data using a third-party API. Features custom components for loading and data display.",
+    image: imgweather, 
+    technologies: ["React", "Custom API Fetching", "CSS"],
+    category: "Frontend/API Integration",
+    liveLink: "https://github.com/shivamg829/weatherly", 
+    githubLink: "https://weatherly-lite.netlify.app/", 
+  },
+];
 
   return (
     <section
