@@ -49,14 +49,14 @@ const projects = [
   },
   {
     id: 3,
-    title: "WeatherWise - Real-time Weather App",
+    title: "Weatherly - Real-time Weather App",
     description:
       "A responsive frontend application built with React to fetch and display current weather data using a third-party API. Features custom components for loading and data display.",
     image: imgweather, 
     technologies: ["React", "Custom API Fetching", "CSS"],
     category: "Frontend/API Integration",
-    liveLink: "https://github.com/shivamg829/weatherly", 
-    githubLink: "https://weatherly-lite.netlify.app/", 
+    liveLink: "https://weatherly-lite.netlify.app/", 
+    githubLink: "https://github.com/shivamg829/weatherly", 
   },
 ];
 
