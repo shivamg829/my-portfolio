@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import imgairbnb from "../assets/airbnb.png";
 import imgdayline from "../assets/DayLine.png";
 import imgweather from "../assets/weatherly.png";
+import imgpass from "../assets/Password.png";
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -63,7 +64,7 @@ const projects = [
     title: "Password Generator",
     description:
       "A responsive ract application that generates secure passwords based on user-defined criteria, including length and character types. Features a user-friendly interface and real-time password strength assessment.",
-    image: imgweather, 
+    image: imgpass, 
     technologies: ["React", "CSS"],
     category: "Frontend",
     liveLink: "https://password-generator-kappa-flame-75.vercel.app/", 
