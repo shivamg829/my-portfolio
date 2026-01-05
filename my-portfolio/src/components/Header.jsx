@@ -61,12 +61,18 @@ const Header = () => {
 
           <button
             onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/SHIVAM.docx";
-              link.download = "SHIVAM.docx";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
+              try {
+                const link = document.createElement("a");
+                link.href = "/SHIVAM_Resume.docx"; 
+                link.download = "SHIVAM_Resume.docx"; 
+                link.style.display = "none"; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              } catch (error) {
+                console.error("Download failed:", error);
+                alert("Unable to download file. Please try again.");
+              }
             }}
             className="hidden md:flex items-center gap-2 bg-indigo-600 text-white px-6 py-2.5 rounded-full hover:bg-indigo-500 transition-all duration-300 font-medium shadow-lg shadow-indigo-500/30 hover:-translate-y-0.5"
           >
