@@ -58,6 +58,17 @@ const projects = [
     liveLink: "https://weatherly-lite.netlify.app/", 
     githubLink: "https://github.com/shivamg829/weatherly", 
   },
+  {
+    id: 4,
+    title: "Password Generator",
+    description:
+      "A responsive ract application that generates secure passwords based on user-defined criteria, including length and character types. Features a user-friendly interface and real-time password strength assessment.",
+    image: imgweather, 
+    technologies: ["React", "CSS"],
+    category: "Frontend",
+    liveLink: "https://password-generator-kappa-flame-75.vercel.app/", 
+    githubLink: "https://github.com/shivamg829/password-generator", 
+  },
 ];
 
   return (
